@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <meta charset="utf-8">
+    <title>LAMP Task 2</title>
+</head>
+<body>
+<div class="well well-sm">
+    <h1>LAMP Task 2</h1>
+</div>
+    <div class="form-group-lg" align="center">
+        <label>Login</label> <!--(required, at least 3 characters)-->
+        <input type="text" class="form-control has-error" id="login" placeholder="Login" minlength="2" required>
+    </div>
+    <div class="form-group-lg" align="center">
+        <label>Password</label> <!--(required, at least 1 digit, 1 lower case, 1 upper case, 8 from the mentioned characters)-->
+        <input type="password" class="form-control" id="pass" placeholder="Password" required>
+    </div>
+    <div class="form-group-lg" align="center">
+        <label>About you</label>
+        <textarea placeholder="About you" class="form-control" id="textArea" rows="3" required="required"></textarea>
+    </div>
+    <label class="char" id="char"></label>
+    <br>
+    <input type="submit" value="Sign up" class="btn btn-purple btn-lg" onclick="signIn()">
+</body>
+</html>
